@@ -3,7 +3,8 @@
 
 void main(){
     char palavra[50];
-    int vogais = 0;
+    int consoantes = 0;
+    int vogais=0;
     int i;
     printf("Digite uma palavra: ");
     scanf("%s", &palavra);
@@ -12,7 +13,10 @@ void main(){
         if(c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u'){
         vogais++;
         }
+        else{
+            consoantes++;
+        }
     }
-    printf("Quantidade de vogais: %d \n", vogais);
+    printf("Quantidade de consoantes: %d \n", consoantes);
 }
 
