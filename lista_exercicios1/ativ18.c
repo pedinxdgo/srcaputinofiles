@@ -17,5 +17,5 @@ void main(){
     printf("Digite o numero de parcelas: \n");
     scanf("%d", &nParcelas);
     float financiamento = jurosCompostos(nParcelas, juro, valor);
-    printf("O valor do financiamento e: %.3f\n", financiamento);
+    printf("O valor do financiamento e: %.2f\n", financiamento);
 }
