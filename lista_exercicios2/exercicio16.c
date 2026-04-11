@@ -1,11 +1,12 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdbool.h>
 
 void main(){
     char palavra[50];
     char palavraInvertida[50];
     int i, tamanho;
-    bool palindromo;
+    bool palindromo = true;
     printf("Digite uma palavra: ");
     scanf("%s", &palavra);
     tamanho = strlen(palavra);
@@ -15,7 +16,7 @@ void main(){
         }
     }
     if(palindromo == false) {
-        printf("\nA palavra inserida nao eh um palindromo");
+        printf("\nA palavra inserida nao e um palindromo");
     }
     else{
     printf("A palavra e um palindromo");
