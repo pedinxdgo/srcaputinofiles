@@ -7,6 +7,8 @@ void main() {
         scanf("%d", &numeros[i]);
     }
     for (int i = 0; i < 5; i++) {
-        printf("%d ", numeros[i]);
+        if(numeros[i] % 2 == 0) {
+            printf("%d ", numeros[i]);
+        }
     }
 }
